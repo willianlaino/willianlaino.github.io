@@ -18,6 +18,15 @@ function onresize() {
     var i = 0;
     for (var i=0;i<el.length; i++) {
         el[i].style.width = "auto";
+        el[i].style.marginBottom = "0px";
+    }
+    var descendentesel = document.querySelectorAll(".lis a");
+    var c = 0;
+    for (var c=0;c<descendentesel.length; c++) {
+      descendentesel[c].style.left = "0px";
+      descendentesel[c].style.fontSize = "1em";
+      descendentesel[c].style.top = "7px";
+
     }
 
     var icon = document.getElementsByClassName('icon');
@@ -51,7 +60,7 @@ function onclick() {
 
   if(click <= 1){
 
-    document.getElementById("menu").style.background = "#381D83";
+    document.getElementById("menu").style.background = "#311769";
     document.getElementById("menu").style.height = "100%";
     document.getElementById("listmenu").style.display = "block";
     document.getElementById("listmenu").style.top = "60px";
@@ -61,6 +70,14 @@ function onclick() {
     var i = 0;
     for (var i=0;i<el.length; i++) {
         el[i].style.width = "100%";
+        el[i].style.marginBottom = "10px";
+    }
+    var descendentesel = document.querySelectorAll(".lis a");
+    var c = 0;
+    for (var c=0;c<descendentesel.length; c++) {
+        descendentesel[c].style.left = "-5px";
+        descendentesel[c].style.fontSize = "1.8em";
+        descendentesel[c].style.top = "-3px";
     }
 
     var icon = document.getElementsByClassName('icon');
@@ -81,11 +98,20 @@ function onclick() {
     document.getElementById("listmenu").style.width = "auto";
     document.getElementById("listmenu").style.display = "none";
 
-    var el = document.getElementsByClassName('lis');
+    /*var el = document.getElementsByClassName('lis');
     var i = 0;
     for (var i=0;i<el.length; i++) {
         el[i].style.width = "auto";
+        el[i].style.marginBottom = "0px";
     }
+    var descendentesel = document.querySelectorAll(".lis a");
+    var c = 0;
+    for (var c=0;c<descendentesel.length; c++) {
+      descendentesel[c].style.left = "0px";
+      descendentesel[c].style.fontSize = "1.1em";
+      descendentesel[c].style.top = "7px";
+
+    }*/
 
     click = 0;
 

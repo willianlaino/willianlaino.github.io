@@ -12,7 +12,7 @@ function menuScrolling() {
 
         if(click < 1){
 
-          document.getElementById("menu").style.background = "#381D83";
+          document.getElementById("menu").style.background = "#311769";
           document.getElementById("menu").style.height = "65px";
           document.getElementById("listmenu").style.top = "16px";
           document.getElementById("logo").style.top = "14px";
