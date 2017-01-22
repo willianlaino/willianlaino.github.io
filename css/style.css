@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+body, html{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+header#headertop{
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  height: 85%;
+  text-align: center;
+  background: url(../images/backgroundwl.png) no-repeat fixed center;
+  background-size: cover;
+}
+section#sobreMim{
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #FFF;
+}
+section#projetos{
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #FFF;
+}
+section#habilidades{
+  position: relative;
+  float: left;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  background: #FFF;
+}

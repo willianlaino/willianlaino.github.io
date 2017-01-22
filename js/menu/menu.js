@@ -1,0 +1,94 @@
+////////////Event resize do window desfaz o menu mobile//////////////
+window.addEventListener("resize", onresize);
+
+function onresize() {
+
+  var windowWidth = window.innerWidth;
+
+  if(windowWidth > 852){
+
+    document.getElementById("menu").style.background = "none";
+    document.getElementById("menu").style.height = "80px";
+    document.getElementById("menu").style.boxShadow = "none";
+    document.getElementById("listmenu").style.display = "block";
+    document.getElementById("listmenu").style.width = "auto";
+    document.getElementById("listmenu").style.top = "30px";
+
+    var el = document.getElementsByClassName('lis');
+    var i = 0;
+    for (var i=0;i<el.length; i++) {
+        el[i].style.width = "auto";
+    }
+
+    var icon = document.getElementsByClassName('icon');
+    var b = 0;
+    for (var b=0;b<icon.length; b++) {
+        icon[b].style.left = "0px";
+        icon[b].style.marginLeft = "0px";
+    }
+
+    click = 0;
+
+  }else{
+
+    if(click == 0){
+
+      document.getElementById("listmenu").style.display = "none";
+
+    }
+
+  }
+
+}
+////////////Event Click do #buttonmenu aciona o menu mobile//////////////
+document.getElementById("buttonmenu").addEventListener("click", onclick);
+
+var click = 0;
+
+function onclick() {
+
+  click += 1;
+
+  if(click <= 1){
+
+    document.getElementById("menu").style.background = "#381D83";
+    document.getElementById("menu").style.height = "100%";
+    document.getElementById("listmenu").style.display = "block";
+    document.getElementById("listmenu").style.top = "60px";
+    document.getElementById("listmenu").style.width = "100%";
+
+    var el = document.getElementsByClassName('lis');
+    var i = 0;
+    for (var i=0;i<el.length; i++) {
+        el[i].style.width = "100%";
+    }
+
+    var icon = document.getElementsByClassName('icon');
+    var b = 0;
+    for (var b=0;b<icon.length; b++) {
+        icon[b].style.left = "50%";
+        icon[b].style.marginLeft = "-11px";
+    }
+
+  }else{
+
+    document.getElementById("menu").style.background = "#381D83";
+    document.getElementById("menu").style.height = "65px";
+    document.getElementById("listmenu").style.top = "16px";
+    document.getElementById("logo").style.top = "14px";
+    document.getElementById("menu").style.boxShadow = "0px 0px 6px #232428";
+    document.getElementById("buttonmenu").style.top = "23px";
+    document.getElementById("listmenu").style.width = "auto";
+    document.getElementById("listmenu").style.display = "none";
+
+    var el = document.getElementsByClassName('lis');
+    var i = 0;
+    for (var i=0;i<el.length; i++) {
+        el[i].style.width = "auto";
+    }
+
+    click = 0;
+
+  }
+
+}

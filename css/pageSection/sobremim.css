@@ -1,0 +1,158 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: calibri;
+    src: url('../../fonts/calibri.ttf'), url('../../fonts/calibri.eot');
+}
+#perfil{
+  position: relative;
+  margin: 0 auto;
+  width: 155px;
+  height: 155px;
+  top: -85px;
+  border-radius: 50%;
+  box-shadow: 0px 6px 0px  10px #00a68a;
+}
+#perfil img{
+  margin: 0 auto;
+  width: 155px;
+  height: 155px;
+  top: -85px;
+  border-radius: 50%;
+  box-shadow: 0px 2px 0px  8px #00b395;
+}
+section#sobreMim article{
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+header#headerArticleSobreMim h1{
+  position: relative;
+  top: -10px;
+  text-align: center;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 2em;
+  color: #3C4858;
+}
+header#headerArticleSobreMim h2{
+  position: relative;
+  top: -10px;
+  text-align: center;
+  font-family: calibri;
+  font-weight: normal;
+  font-size: 1.3em;
+  color: #3C4858;
+}
+section#paragrafo{
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+}
+section#sobreMim article p{
+  position: relative;
+  text-align: center;
+  font-family: calibri;
+  font-weight: light;
+  font-size: 1.2em;
+  line-height: 125%;
+  color: #3C4858;
+  text-align: justify;
+}
+#independente{
+  position: relative;
+  top: 0px;
+  margin-top: 130px;
+  width: 100%;
+  height: 300px;
+  background: #f1f2f4;
+}
+#containerIndependente{
+  position: relative;
+  margin: 0 auto;
+  top: 45px;
+  width: 45%;
+  height: auto;
+}
+#autodidata{
+  position: relative;
+  float: left;
+}
+#autodidata h1{
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #2C3E50;
+}
+#autodidata h2{
+  position: relative;
+  text-align: center;
+  font-family: calibri;
+  font-weight: lighter;
+  font-size: 1.0em;
+  color: #2C3E50;
+}
+#criativo{
+  position: relative;
+  float: right;
+}
+#criativo img{
+  height: 107px;
+}
+#criativo h1{
+  position: relative;
+  margin-bottom: 10px;
+  text-align: center;
+  font-family: calibri;
+  font-weight: bold;
+  font-size: 1.4em;
+  color: #2C3E50;
+}
+#criativo h2{
+  position: relative;
+  text-align: center;
+  font-family: calibri;
+  font-weight: lighter;
+  font-size: 1.0em;
+  color: #2C3E50;
+}
+/*            ALL MEDIAS
+//////////////////////////////////////
+Adaptando texto, autodidata e criativo*/
+
+@media screen and (max-width: 1105px){
+  #containerIndependente{
+    width: 60%;
+  }
+  section#paragrafo{
+    width: 65%;
+  }
+}
+@media screen and (max-width: 857px){
+  #containerIndependente{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 722px){
+  #containerIndependente{
+    width: 85%;
+  }
+  section#paragrafo{
+    width: 85%;
+  }
+}
+@media screen and (max-width: 577px){
+  #containerIndependente{
+    width: 213px;
+  }
+  #independente{
+    height: 570px;
+  }
+  #criativo{
+    top: 30px;
+  }
+}

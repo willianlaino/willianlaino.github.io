@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+header#headerArticleHabilidades{
+  margin: 0px;
+}
+header#headerArticleHabilidades h1{
+  position: relative;
+  margin-top: 70px;
+  text-align: center;
+  font-family: calibri;
+  font-weight: bolder;
+  letter-spacing: -2px;
+  font-size: 2.6em;
+  color: #3C4858;
+}
+section#containerMinhasHabilidades{
+  position: relative;
+  margin: 0 auto;
+  width: 55%;
+  height: auto;
+}
+#dominio{
+  position: relative;
+  margin: 0 auto;
+  float: left;
+  top: -40px;
+  width: 37%;
+  height: auto;
+}
+#dominio h1{
+  text-align: center;
+  font-family: calibri;
+  font-weight: lighter;
+  letter-spacing: -2px;
+  font-size: 1.6em;
+  color: #3C4858;
+}
+#dominio h2{
+  position: relative;
+  margin-left: 5px;
+  top: 20px;
+  text-align: center;
+  line-height: 20%;
+  font-family: calibri;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: #3C4858;
+}
+#conhecimentos{
+  position: relative;
+  margin: 0 auto;
+  float: right;
+  top: -40px;
+  width: auto;
+  height: auto;
+}
+#conhecimentos h1{
+  text-align: center;
+  font-family: calibri;
+  font-weight: lighter;
+  letter-spacing: -2px;
+  font-size: 1.6em;
+  color: #3C4858;
+}
+#conhecimentos h2{
+  text-align: center;
+  font-family: calibri;
+  font-weight: lighter;
+  font-size: 1.2em;
+  color: #3C4858;
+}
+#icon{
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
+.iconh{
+  position: relative;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  height: 40px;
+}
+@media screen and (max-width: 1200px){
+  section#containerMinhasHabilidades{
+    width: 80%;
+  }
+}
+@media screen and (max-width: 700px){
+  #dominio{
+    width: auto;
+    float: none;
+  }
+  #conhecimentos{
+    width: auto;
+    float: none;
+  }
+  section#containerMinhasHabilidades{
+    width: 80%;
+  }
+}
