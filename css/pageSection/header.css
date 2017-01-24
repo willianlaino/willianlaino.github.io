@@ -10,7 +10,7 @@
 }
 #video-background {
   display: block;
-  position: fixed;
+  position: absolute;
   right: 0;
   bottom: 0;
   min-width: 100%;
@@ -32,13 +32,7 @@
 }
 #container-chamada{
   position: relative;
-  top: 36%;
-  /*-webkit-transition-property: top;
-  transition-property: top;
-  -webkit-transition-duration: .2s;
-  transition-duration: .2s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;*/
+  top: 32%;
   margin: 0 auto;
   width: auto;
   height: auto;
@@ -62,7 +56,7 @@
 }
 #container-chamada h3{
   position: relative;
-  top: 70px;
+  top: 50px;
   font-family: brah;
   color: #ffffff;
   font-weight: normal;
@@ -71,9 +65,20 @@
 }
 @media screen and (max-height: 653px){
   #container-chamada{
-    top: 30%;
+    top: 36%;
   }
   #container-chamada h3{
-    top: 20px;
+    display: none;
+  }
+}
+@media screen and (max-width: 473px){
+  #container-chamada h1{
+    font-size: 2.5em;
+  }
+  #container-chamada h2{
+    font-size: 1.5em;
+  }
+  #container-chamada h3{
+    font-size: 1em;
   }
 }

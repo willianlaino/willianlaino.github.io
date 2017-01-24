@@ -1,20 +1,27 @@
-window.addEventListener("scroll", myFunction);
-var elmTop = document.getElementById("container-chamada").offsetTop;
-var scrollY = 0;
-var preeffect = 90;
+function effectParallax() {
 
-function myFunction() {
+    var effect = 1.8;
+    var elm = document.getElementsByClassName("parallax");
+    var i = 0;
 
-    scrollY = window.pageYOffset;
+    while (elm[i]) {
 
-    if (scrollY >= elmTop-preeffect){
+        elmoffsetTop = elm[i].offsetTop;
+        elmoffsetWidth = elm[i].offsetWidth;
+        scrollPos = window.pageYOffset;
+        scrollElm = scrollPos-elmoffsetWidth;
 
-      document.getElementById("container-chamada").style.top = scrollY+preeffect+"px";
+        if (scrollPos >= elmoffsetTop) {
 
-    }else{
+          if (scrollElm <= elmoffsetTop) {
 
-      document.getElementById("container-chamada").style.top = elmTop+"px";
+              elm[i].style.top = (scrollPos-elmoffsetTop)/effect +"px";
 
+          }
+
+        }
+        i++;
     }
 
 }
+window.addEventListener("scroll", effectParallax);
