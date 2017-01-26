@@ -19,6 +19,10 @@ function effectParallax() {
 
           }
 
+        }else{
+
+            elm[i].style.top = "0px";
+
         }
         i++;
     }
