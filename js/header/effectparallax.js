@@ -11,7 +11,7 @@ function effectParallax() {
         scrollPos = window.pageYOffset;
         scrollElm = scrollPos-elmoffsetWidth;
 
-        if (scrollPos >= elmoffsetTop) {
+        if (scrollPos > elmoffsetTop) {
 
           if (scrollElm <= elmoffsetTop) {
 
