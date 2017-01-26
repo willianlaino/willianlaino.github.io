@@ -92,7 +92,7 @@ section#sobreMim article p{
   position: relative;
   text-align: center;
   font-family: calibri;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 1.0em;
   color: #2C3E50;
 }
@@ -116,7 +116,7 @@ section#sobreMim article p{
   position: relative;
   text-align: center;
   font-family: calibri;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 1.0em;
   color: #2C3E50;
 }
@@ -151,11 +151,12 @@ Adaptando texto, autodidata e criativo*/
 @media screen and (max-width: 577px){
   #containerIndependente{
     width: 213px;
+    top: 40px;
   }
   #independente{
     height: 570px;
   }
   #criativo{
-    top: 30px;
+    top: 20px;
   }
 }

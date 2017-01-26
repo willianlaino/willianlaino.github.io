@@ -41,6 +41,8 @@ li.lis{
   height: 35px;
   color: #ffffff;
   font-family: calibri;
+  letter-spacing: 1px;
+  font-weight: bold;
   font-size: 1.1em;
 }
 li#HOME{

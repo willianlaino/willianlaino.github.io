@@ -8,6 +8,10 @@
     font-family: brah;
     src: url('../../fonts/brah.ttf'), url('../../fonts/brah.eot');
 }
+@font-face {
+    font-family: calibri;
+    src: url('../../fonts/calibri.ttf'), url('../../fonts/calibri.eot');
+}
 #video-background {
   display: block;
   position: absolute;
@@ -18,22 +22,13 @@
   width: auto;
   height: auto;
   z-index: 0;
-  /*
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: auto;
-  height: auto;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translateX(-50%) translateY(-50%);
-  transition: 1s opacity;
-	z-index: 0;*/
 }
 #container-chamada{
   position: relative;
   top: 32%;
   margin: 0 auto;
+  margin-left: 20px;
+  margin-right: 20px;
   width: auto;
   height: auto;
 }
@@ -48,37 +43,32 @@
 #container-chamada h2{
   position: relative;
   top: 10px;
-  font-family: brah;
+  font-family: calibri;
   color: #ffffff;
-  font-weight: normal;
-  font-size: 2.1em;
+  font-weight: lighter;
+  font-size: 3.2em;
   margin: 0;
 }
 #container-chamada h3{
+  display: none;
   position: relative;
   top: 50px;
-  font-family: brah;
+  font-family: calibri;
   color: #ffffff;
-  font-weight: normal;
-  font-size: 1.3em;
+  font-weight: lighter;
+  font-size: 1.5em;
   margin: 0;
 }
 @media screen and (max-height: 653px){
   #container-chamada{
-    top: 36%;
-  }
-  #container-chamada h3{
-    display: none;
+    top: 30%;
   }
 }
-@media screen and (max-width: 473px){
+@media screen and (max-width: 608px){
   #container-chamada h1{
     font-size: 2.5em;
   }
   #container-chamada h2{
-    font-size: 1.5em;
-  }
-  #container-chamada h3{
-    font-size: 1em;
+    font-size: 1.9em;
   }
 }
