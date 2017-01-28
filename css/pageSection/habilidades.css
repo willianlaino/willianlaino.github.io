@@ -1,11 +1,16 @@
 @charset "UTF-8";
 
 header#headerArticleHabilidades{
-  margin: 0px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 15px;
 }
 header#headerArticleHabilidades h1{
   position: relative;
-  margin-top: 70px;
+  margin: 0;
+  width: 100%;
   text-align: center;
   font-family: calibri;
   font-weight: bolder;
@@ -23,7 +28,7 @@ section#containerMinhasHabilidades{
   position: relative;
   margin: 0 auto;
   float: left;
-  top: -40px;
+  top: 0px;
   width: 37%;
   height: auto;
 }
@@ -35,22 +40,11 @@ section#containerMinhasHabilidades{
   font-size: 1.6em;
   color: #3C4858;
 }
-#dominio h2{
-  position: relative;
-  margin-left: 5px;
-  top: 20px;
-  text-align: center;
-  line-height: 20%;
-  font-family: calibri;
-  font-weight: lighter;
-  font-size: 1.2em;
-  color: #3C4858;
-}
 #conhecimentos{
   position: relative;
   margin: 0 auto;
   float: right;
-  top: -40px;
+  top: 0px;
   width: auto;
   height: auto;
 }
@@ -60,13 +54,6 @@ section#containerMinhasHabilidades{
   font-weight: lighter;
   letter-spacing: -2px;
   font-size: 1.6em;
-  color: #3C4858;
-}
-#conhecimentos h2{
-  text-align: center;
-  font-family: calibri;
-  font-weight: lighter;
-  font-size: 1.2em;
   color: #3C4858;
 }
 #icon{

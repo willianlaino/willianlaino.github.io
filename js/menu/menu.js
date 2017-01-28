@@ -28,7 +28,6 @@ function onresize() {
       descendentesel[c].style.top = "7px";
 
     }
-
     var icon = document.getElementsByClassName('icon');
     var b = 0;
     for (var b=0;b<icon.length; b++) {
@@ -70,14 +69,14 @@ function onclick() {
     var i = 0;
     for (var i=0;i<el.length; i++) {
         el[i].style.width = "100%";
-        el[i].style.marginBottom = "10px";
+        el[i].style.marginBottom = "20px";
     }
     var descendentesel = document.querySelectorAll(".lis a");
     var c = 0;
     for (var c=0;c<descendentesel.length; c++) {
         descendentesel[c].style.left = "-5px";
         descendentesel[c].style.fontSize = "1.8em";
-        descendentesel[c].style.top = "-3px";
+        descendentesel[c].style.top = "-1px";
     }
 
     var icon = document.getElementsByClassName('icon');

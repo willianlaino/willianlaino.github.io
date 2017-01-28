@@ -1,14 +1,17 @@
 @charset "UTF-8";
-
 header#headerArticleProjetos{
-  margin: 0px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 header#headerArticleProjetos h1{
-  position: relative;
-  margin-top: 70px;
+  margin: 0 auto;
   text-align: center;
+  width: 100%;
   font-family: calibri;
-  font-weight: bolder;
+  font-weight: bold;
   letter-spacing: -2px;
   font-size: 2.6em;
   color: #3C4858;

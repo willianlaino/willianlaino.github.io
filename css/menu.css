@@ -1,17 +1,13 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: calibri;
-    src: url('../fonts/calibri.ttf'), url('../fonts/calibri.eot');
-}
-@font-face {
-    font-family: arialRoundB;
-    src: url('../fonts/arialRoundb.ttf'), url('../fonts/arialRoundb.eot');
-}
 nav{
   position: fixed;
   width: 100%;
   height: 80px;
+  -webkit-transition: height 0.25s;
+  -moz-transition: height 0.25s;
+  -o-transition: height 0.25s;
+  transition: height 0.25s;
   margin: 0 auto;
   z-index: 99;
 }
@@ -40,9 +36,9 @@ li.lis{
   width: 80px;
   height: 35px;
   color: #ffffff;
-  font-family: calibri;
+  font-family: fjalaone;
   letter-spacing: 1px;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 1.1em;
 }
 li#HOME{
@@ -106,7 +102,7 @@ li a:active{
   top: 6px;
   color: rgba(255,255,255,0.6);
   text-decoration: none;
-  font-family: arialRoundB;
+  font-family: fjalaone;
   font-size: 1.4em;
 }
 #logo a:link{

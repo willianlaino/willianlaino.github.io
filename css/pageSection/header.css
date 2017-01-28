@@ -1,17 +1,5 @@
 @charset "UTF-8";
 
-@font-face {
-    font-family: arialRoundB;
-    src: url('../../fonts/arialRoundb.ttf'), url('../../fonts/arialRoundb.eot');
-}
-@font-face {
-    font-family: brah;
-    src: url('../../fonts/brah.ttf'), url('../../fonts/brah.eot');
-}
-@font-face {
-    font-family: calibri;
-    src: url('../../fonts/calibri.ttf'), url('../../fonts/calibri.eot');
-}
 #video-background {
   display: block;
   position: absolute;
@@ -26,7 +14,7 @@
 }
 #container-chamada{
   position: relative;
-  top: 32%;
+  top: 30%;
   margin: 0 auto;
   margin-left: 20px;
   margin-right: 20px;
@@ -35,34 +23,41 @@
 }
 #container-chamada h1{
   position: relative;
-  font-family: arialRoundB;
+  font-family: fjalaone;
   color: #ffffff;
   font-weight: normal;
-  font-size: 3.2em;
+  font-size: 5em;
   margin: 0;
 }
 #container-chamada h2{
   position: relative;
-  top: 10px;
-  font-family: calibri;
+  top: 0px;
+  font-family: fjalaone;
   color: #ffffff;
-  font-weight: lighter;
-  font-size: 3.2em;
+  font-weight: normal;
+  font-size: 5em;
   margin: 0;
 }
-#container-chamada h3{
-  display: none;
-  position: relative;
-  top: 50px;
-  font-family: calibri;
-  color: #ffffff;
-  font-weight: lighter;
-  font-size: 1.5em;
-  margin: 0;
-}
-@media screen and (max-height: 653px){
+@media screen and (max-height: 608px){
   #container-chamada{
     top: 30%;
+  }
+  #container-chamada h1{
+    font-size: 4em;
+  }
+  #container-chamada h2{
+    font-size: 4em;
+  }
+}
+@media screen and (max-height: 545px){
+  #container-chamada{
+    top: 32%;
+  }
+  #container-chamada h1{
+    font-size: 3em;
+  }
+  #container-chamada h2{
+    font-size: 3em;
   }
 }
 @media screen and (max-width: 608px){
